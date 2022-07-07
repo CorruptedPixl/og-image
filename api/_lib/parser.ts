@@ -54,7 +54,7 @@ function getDefaultImages(images: string[], theme: Theme): string[] {
 	const defaultImage =
 		theme === "light"
 			? "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_black.svg"
-			: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_white.svg";
+			: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_inner_white.svg";
 
 	if (!images || !images[0]) {
 		return [defaultImage];
