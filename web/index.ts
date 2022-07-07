@@ -144,7 +144,7 @@ const imageLightOptions: DropdownOption[] = [
 const imageDarkOptions: DropdownOption[] = [
 	{
 		text: "Pixl",
-		value: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_white.svg",
+		value: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_inner_white.svg",
 	},
 	{
 		text: "Next.js",
