@@ -129,7 +129,7 @@ const markdownOptions: DropdownOption[] = [
 const imageLightOptions: DropdownOption[] = [
 	{
 		text: "Pixl",
-		value: "https://cdn.cpixl.com/img/pixl-logo-holo-color.png",
+		value: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_black.svg",
 	},
 	{
 		text: "Next.js",
@@ -144,7 +144,7 @@ const imageLightOptions: DropdownOption[] = [
 const imageDarkOptions: DropdownOption[] = [
 	{
 		text: "Pixl",
-		value: "https://cdn.cpixl.com/img/pixl-logo-holo-color.png",
+		value: "https://cdn.cpixl.com/img/logos/pixl/pixl_logo_white.svg",
 	},
 	{
 		text: "Next.js",
@@ -377,9 +377,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 						label: `Add Image ${images.length + 1}`,
 						onclick: () => {
 							const nextImage =
-								images.length === 1
-									? "https://cdn.jsdelivr.net/gh/remojansen/logo.ts@master/ts.svg"
-									: "https://cdn.cpixl.com/img/pixl-logo-holo-color.png";
+								images.length === 1 ? "https://cdn.cpixl.com/img/pixl-logo-holo-color.png" : "";
 							setLoadingState({ images: [...images, nextImage] });
 						},
 					}),
