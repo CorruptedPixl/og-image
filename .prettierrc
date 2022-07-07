@@ -1,0 +1,34 @@
+{
+	"printWidth": 120,
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": false,
+	"quoteProps": "as-needed",
+	"jsxSingleQuote": false,
+	"trailingComma": "es5",
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"arrowParens": "always",
+	"htmlWhitespaceSensitivity": "css",
+	"overrides": [
+		{
+			"files": ["package.json", ".composer.json", "*.yml", "*.md", "*.php"],
+			"options": {
+				"useTabs": false
+			}
+		},
+		{
+			"files": ["package.json", "*.yml", "*.md"],
+			"options": {
+				"tabWidth": 2
+			}
+		},
+		{
+			"files": ["composer.json", "*.php"],
+			"options": {
+				"tabWidth": 4
+			}
+		}
+	]
+}

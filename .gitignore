@@ -1,6 +1,6 @@
 .now
 .vercel
+.history
 node_modules
 api/dist
 public/dist
-
