@@ -186,7 +186,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 		theme = "dark",
 		md = true,
 		text = "**Hello** World",
-		images = [imageLightOptions[0].value],
+		images = [imageDarkOptions[0].value],
 		widths = [],
 		heights = [],
 		showToast = false,
