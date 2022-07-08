@@ -183,7 +183,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 	const {
 		fileType = "png",
 		fontSize = "100px",
-		theme = "light",
+		theme = "dark",
 		md = true,
 		text = "**Hello** World",
 		images = [imageLightOptions[0].value],
