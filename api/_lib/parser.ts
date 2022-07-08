@@ -60,9 +60,18 @@ function getDefaultImages(images: string[], theme: Theme): string[] {
 		return [defaultImage];
 	}
 
-	if (!images[0].startsWith("https://cdn.cpixl.com/") && !images[0].endsWith("#external")) {
-		images[0] = defaultImage;
-	}
+	// images[0] = validateImageSource(images[0], defaultImage);
+	images.forEach((image, index) => {
+		images[index] = validateImageSource(image, defaultImage);
+	});
 
 	return images;
+}
+
+function validateImageSource(imageSource: string, defaultImage: string): string {
+	if (!imageSource.startsWith("https://cdn.cpixl.com/") && !imageSource.endsWith("#external")) {
+		imageSource = defaultImage;
+	}
+
+	return imageSource;
 }
